@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { FormGroup, FormBuilder } from '@angular/forms';
 
 @Component({
   selector: 'app-otp-gen',
@@ -7,8 +8,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class OtpGenComponent implements OnInit {
 
-  constructor() { }
-
+ 
+  forms:FormGroup;
+  constructor(private fb : FormBuilder) {
+    this.forms=this.fb.group({
+      otpForm:['']
+    })
+   }
+  
   ngOnInit() {}
 
 }
