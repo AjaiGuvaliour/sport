@@ -1,0 +1,53 @@
+.login{
+    width: 481px;
+    height: 147px;
+    margin: auto;
+    position: relative;
+    border-radius: 14px;
+    height:220px;
+    top: 15%;
+    background: white;
+    transform: translate(3px, 60px);
+}
+.container{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    opacity:0.6;
+    background-image: url("../../../assets/image/Sport_HD.jpg");
+    background-repeat: no-repeat;
+    background-color: #cccccc;
+    
+}
+@media only screen and (max-width: 600px) {
+    ion-item{
+        width: 81%;
+    }
+    ion-button{
+        width: 89% !important;
+        top: 75% !important;
+    }
+
+    .login{
+        width: 341px;
+        height:220px;
+
+    }
+  }
+
+ion-item{
+    width: 85%;
+    top: 20px;
+    transform: translate(35px, 0px);
+}
+
+ion-button{
+    position: absolute;
+    /* display: table-row-group; */
+    top: 75% !important;
+    left: 14px;
+    /* background-color: blue; */
+    width: 94%;
+}
+
+

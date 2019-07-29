@@ -5,6 +5,7 @@ import { SportsRoutingModule } from './sports-routing.module';
 import { BookingsComponent } from './bookings/bookings.component';
 import { ManageSportComponent } from './manage-sport/manage-sport.component';
 import { SelectedSportComponent } from './selected-sport/selected-sport.component';
+import { SharedModule } from '../shared/shared.module';
 
 @NgModule({
   declarations: [
@@ -14,6 +15,7 @@ import { SelectedSportComponent } from './selected-sport/selected-sport.componen
   ],
   imports: [
     CommonModule,
+    SharedModule,
     SportsRoutingModule
   ]
 })

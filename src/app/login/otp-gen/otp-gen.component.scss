@@ -1,9 +1,11 @@
 .login{
-    width: 300px;
-    height: 400px;
+    width: 481px;
+    height: 147px;
     margin: auto;
     position: relative;
-    top: 10%;
+    border-radius: 14px;
+    top: 15%;
+    background: white;
     transform: translate(3px, 60px);
 }
 .container{
@@ -16,15 +18,33 @@
     background-color: #cccccc;
     
 }
+@media only screen and (max-width: 600px) {
+    ion-item{
+        width: 81%;
+    }
+    ion-button{
+        width: 89%;
+    }
+    .login{
+        width: 341px;
 
-ion-button{
-    position: absolute;
-    top: 70%;
-    transform: translate(35px, 0px);
-}
+    }
+  }
 
 ion-item{
     position: absolute;
-    top: 50%;
+    width: 85%;
+    top: 15%;
     transform: translate(35px, 0px);
 }
+
+ion-button{
+    position: absolute;
+    /* display: table-row-group; */
+    top: 60%;
+    left: 14px;
+    /* background-color: blue; */
+    width: 94%;
+}
+
+
